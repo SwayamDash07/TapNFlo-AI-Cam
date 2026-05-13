@@ -132,16 +132,13 @@ This causes missed detections at the edges of the frame and occasional false beh
 ### 2. Camera angle limitations
 The behaviour classifier was designed for corner-mounted diagonal CCTV. It uses torso lean and wrist reach as signals. For other mounting angles (directly overhead, eye level) the thresholds may need manual adjustment in `config.py`.
 
-### 3. Single camera, single student focus
-The current `main.py` webcam mode monitors one student at a time using manual seat switching. True parallel multi-student monitoring across multiple simultaneous cameras is not yet implemented.
-
-### 4. No temporal memory across sessions
+### 3. No temporal memory across sessions
 There is no database or persistent storage. Reports exist only as terminal output for the current session. Evidence clips are not automatically saved.
 
-### 5. Seat calibration is position-based
+### 4. Seat calibration is position-based
 Seat assignment during calibration sorts detected people by position (left to right). If a student is missing from the first 1.5 seconds of video, their seat may be assigned to the wrong person.
 
-### 6. No audio detection
+### 5. No audio detection
 Whispering and verbal communication between students is not detected. A microphone input channel is not yet integrated.
 
 ---
