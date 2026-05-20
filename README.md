@@ -135,10 +135,7 @@ The behaviour classifier was designed for corner-mounted diagonal CCTV. It uses 
 ### 3. No temporal memory across sessions
 There is no database or persistent storage. Reports exist only as terminal output for the current session. Evidence clips are not automatically saved.
 
-### 4. Seat calibration is position-based
-Seat assignment during calibration sorts detected people by position (left to right). If a student is missing from the first 1.5 seconds of video, their seat may be assigned to the wrong person.
-
-### 5. No audio detection
+### 4. No audio detection
 Whispering and verbal communication between students is not detected. A microphone input channel is not yet integrated.
 
 ---
